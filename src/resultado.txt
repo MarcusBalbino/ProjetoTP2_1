@@ -1,0 +1,6 @@
+Brown The cat is
+Brown The fox is
+blue The car is
+car is blue The
+cat is Brown The
+fox is Brown The
