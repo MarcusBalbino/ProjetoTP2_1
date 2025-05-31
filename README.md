@@ -16,7 +16,7 @@ https://drive.google.com/drive/folders/1D3CjMrg-fIwYatb9ToyL4D-HZ-Zau9ri?hl=pt-b
 ## Estrutura do Projeto
 
 ```bash
-kwic_gui
+kwic
 ├── Cargo.toml         # Dependências e metadados do projeto
 ├── src
 │   ├── lib.rs         # Lógica principal do KWIC (funções de leitura e geração de rotações)
