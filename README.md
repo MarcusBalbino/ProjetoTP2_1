@@ -1,4 +1,11 @@
 # KWIC em Rust
+## Estilo de progração: Double Map Reduce
+### Participantes:
+Henrique Carvalho Wolski - 231013627
+Lucas Frutuoso Alvarenga - 221007152
+Rodrigo Vieira Gusmão - 232036466
+Lucas Teles Leiro - 211066131
+Marcus Vinicius Balbino Cavalcante - 160135974  
 
 Para compilar e executar o projeto Rust, use os comandos abaixo:
 
