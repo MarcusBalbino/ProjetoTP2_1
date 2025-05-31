@@ -26,7 +26,6 @@ fn integration_test_full_flow() {
     drop(f_phrases);
 
     // 3) Escreve no arquivo de “stopwords” (as stop words que serão filtradas):
-    //    Cada linha aqui é uma stop word em minúsculas.
     //      “in”
     //      “and”
     let mut f_stop = std::fs::File::create(&stopwords_path).unwrap();
@@ -61,9 +60,9 @@ fn integration_test_full_flow() {
     drop(f_out);
 
     // 8) Lê o arquivo de saída e verifica o conteúdo:
-    //    Aqui verificamos, por exemplo:
+    //    Aqui verificamos:
     //      * Que exista a rotação “Spain The” (pois “in” no começo de “in Spain The” foi filtrado).
-    //      * Que a rotação “Hereford, and” apareça, porque ela NÃO COMEÇA com “and”:
+    //      * Que a rotação “Hereford, and” apareça, porque ela não começa com “and”:
     let reader = std::io::BufReader::new(std::fs::File::open(&output_path).unwrap());
     let lines: Vec<String> = reader.lines().map(|l| l.unwrap()).collect();
     assert!(lines.contains(&"Spain The".to_string()));
@@ -89,7 +88,7 @@ fn integration_case_sensitive_and_window_size() {
     writeln!(f_phrases, "banana Apple Banana").unwrap();
     drop(f_phrases);
 
-    // 3) Cria um arquivo de stopwords vazio (nenhuma stopword)
+    // 3) Cria um arquivo de stopwords vazio
     let f_stop = File::create(&stopwords_path).unwrap();
     drop(f_stop);
 

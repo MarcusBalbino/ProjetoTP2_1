@@ -1,5 +1,3 @@
-// src/main.rs
-
 mod gui;   // importa o módulo gui.rs
 
 fn main() {

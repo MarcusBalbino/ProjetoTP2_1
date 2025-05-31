@@ -1,5 +1,5 @@
 use std::collections::HashSet;
-use std::io::Write;             // <- adicionado para que writeln!() funcione
+use std::io::Write;
 use kwic_gui::{ler_linhas_do_arquivo, gerar_rotations};
 
 #[test]

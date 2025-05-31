@@ -1,4 +1,3 @@
-// src/gui.rs
 use eframe::{egui, App, Frame, NativeOptions};
 use std::collections::HashSet;
 use std::fs;
@@ -24,7 +23,6 @@ struct KwicApp {
     output_path: String,
     result: Vec<String>,
     error: Option<String>,
-    // novas opções
     case_sensitive: bool,
     window_size: usize,
 }
@@ -91,8 +89,8 @@ impl App for KwicApp {
             ui.separator();
             ui.horizontal(|ui| {
                 ui.label("Ordenação:");
-                ui.radio_value(&mut self.case_sensitive, true, "Sensible a Maiúsc/Minúsc");
-                ui.radio_value(&mut self.case_sensitive, false, "Insensible");
+                ui.radio_value(&mut self.case_sensitive, true, "Sensível a Maíusculo/Minúsculo");
+                ui.radio_value(&mut self.case_sensitive, false, "Insensível a Maíusculo/Minúsculo");
             });
             ui.horizontal(|ui| {
                 ui.label("Tamanho da janela de contexto:");

@@ -1,5 +1,9 @@
-blue The
-Brown The
-car is
-cat is
-fox is
+A brown cat sat
+brown cat sat A
+brown fox The quick
+brown The cat is
+cat is brown The
+cat sat A brown
+fox The quick brown
+quick brown fox The
+sat A brown cat

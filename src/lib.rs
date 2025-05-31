@@ -72,7 +72,3 @@ pub fn gerar_rotations(
 
     final_contexts
 }
-
-// (Opcional) Você pode colocar testes unitários aqui mesmo dentro de lib.rs, envoltos em #[cfg(test)].
-// Mas, como queremos manter este lib.rs “limpo”, mostraremos os testes em arquivos externos na próxima seção.
-
