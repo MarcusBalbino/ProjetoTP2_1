@@ -1,6 +1,5 @@
-Brown The cat is
-Brown The fox is
-blue The car is
-car is blue The
-cat is Brown The
-fox is Brown The
+blue The
+Brown The
+car is
+cat is
+fox is

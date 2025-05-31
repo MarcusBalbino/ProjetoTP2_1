@@ -3,7 +3,7 @@ use eframe::{egui, App, Frame, NativeOptions};
 use std::collections::HashSet;
 use std::fs;
 use std::io::Write;
-use crate::{ler_linhas_do_arquivo, gerar_rotations};
+use kwic_gui::{ler_linhas_do_arquivo, gerar_rotations};
 
 pub fn run_gui() {
     let native_options = NativeOptions::default();
