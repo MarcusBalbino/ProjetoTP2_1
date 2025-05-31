@@ -1,7 +1,13 @@
 [package]
-name = "KWIC"
+name = "kwic_gui"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-itertools = "0.12"
+eframe = "0.24"
+egui = "0.24"
+rayon = "1.7"
+
+# Habilita winapi para Windows
+[target.'cfg(windows)'.dependencies]
+winapi = { version = "0.3.9", features = ["winuser", "windef"] }
